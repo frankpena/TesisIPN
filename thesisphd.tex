@@ -1,0 +1,157 @@
+\documentclass[letterpaper, 12pt, oneside]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%% PREAMBULO %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% PAQUETES %%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}                             %Never write a paper without using amsmath for its many new commands 
+\usepackage{amssymb}			%
+\usepackage{makeidx}			%
+\usepackage{graphicx}			%
+\usepackage[utf8]{inputenc}			%
+\usepackage{hyperref}			%
+\usepackage{setspace}			%
+\usepackage{cite}			%
+%\usepackage{pst-plot}			%
+%\usepackage[crop=on]{auto-pst-pdf}
+\usepackage{multicol}			%
+\usepackage{booktabs}			%
+\usepackage{threeparttable}
+\usepackage{siunitx}
+\usepackage{xfrac}
+\usepackage[font=footnotesize,labelfont=bf]{caption} % scriptsize, footnotesize, small, normalsize, large, Large
+\usepackage{geometry} % Required for adjusting page dimensions
+\usepackage{fancyhdr} % Numeracion y encabezados
+\usepackage[intoc, spanish]{nomencl}
+%\usepackage[spanish]{babel}			%
+%\usepackage[pdf]{pstricks}
+%\usepackage{pst-all}
+%\usepackage{pst-node}
+%\usepackage{pstricks-add}
+\usepackage{ipn-cover}
+\usepackage[x11names]{xcolor}
+\usepackage{lineno}
+
+%% Crea los grupos de la nomenclatura. m para las mayusculas, n para las minusculas y g para las letras griegas.
+% -----------------------------------------
+\usepackage{etoolbox}
+\renewcommand\nomgroup[1]{%
+  \item[\bfseries
+  \ifstrequal{#1}{m}{Mayúsculas}{%
+  \ifstrequal{#1}{n}{Minúsculas}{%
+  \ifstrequal{#1}{g}{Letras griegas}{}}}%
+]}
+% -----------------------------------------
+
+\makeindex
+
+\geometry{
+	letterpaper, % Hoja tamaño carta
+	top=2.5cm, % Top margin
+	bottom=2.5cm, % Bottom margin
+	left=3.9cm, % Left margin
+	right=2.5cm, % Right margin	
+	head = 1.0cm,
+	foot = 1.0cm,
+	includehead, % Include space for a header
+	includefoot, % Include space for a footer
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+\pagestyle{fancy} % Enables the custom headers/footers
+\fancyhf{}
+% Headers
+\lhead{AI} % Left header
+\chead{AC} % Center header - currently printing the article title
+\rhead{AD} % Right header
+% Footers
+\lfoot{DI} % Left footer
+\cfoot{DC} % Center footer
+\rfoot{\thepage} % Right footer
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setcounter{secnumdepth}{3} % para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{3} % para que ponga subsubsecciones en el indice
+
+\newskip\smallskipamount \smallskipamount = 3pt plus 1pt minus 1pt
+\newskip\medskipamount   \medskipamount  = 6pt plus 2pt minus 2pt
+\newskip\bigskipamount   \bigskipamount = 12pt plus 4pt minus 4pt
+
+%\hypersetup{colorlinks,breaklinks,
+%    colorlinks,
+%    citecolor=[rgb]{0.1,0.	1,0.1},
+%    filecolor=[rgb]{0,0.5,0.5},
+%    linkcolor=[rgb]{0.2,0.2,0.2},
+%    urlcolor=red
+%}
+\makenomenclature
+
+\singlespacing
+%%%%%%%%%%%%%%%%%%%%%
+% Definiendo campos %
+%%%%%%%%%%%%%%%%%%%%%
+
+\author{M.Sc. Franklin W. Peña-Polo}
+\title{Inestabilidades Paramétricas de Ondas en Fluidos.}
+\postgraduate{Doctorado en Ciencias en Ingeniería Mecánica}
+\degree{F\'ISICO}
+\supervisor{Dr. Ignacio Carvajal \\ Dr. Leonardo Sigalotti\\}
+\cityandyear{Ciudad de M\'exico, Agosto de 2019}
+\logouni{logo-ipn.png}
+\logofac{logo-esime.png}
+
+\begin{document}
+
+\maketitle
+
+
+%\singlespacing
+%\onehalfspacing
+%\doublespacing
+\setstretch{1.5} % for custom spacing
+
+\frontmatter
+%\include{1titlepage}
+%\include{2acta}
+%\include{3resumen}
+%\include{4dedicatoria}
+%\include{5agradecimientos}
+
+\setstretch{1.15} % for custom spacing
+
+\tableofcontents
+\listoffigures
+\listoftables
+\printnomenclature % La 
+
+\include{preface}
+
+\linenumbers
+
+\mainmatter
+\include{chapter1}
+\include{chapter2}
+%\include{chapter3}
+%\include{chapter4}
+%\include{chapter5}
+%\include{chapter6}
+%\include{chapter7}
+%\include{chapter8}
+%\include{chapter9}
+
+%\backmatter
+%\include{glossary}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+%\include{notat} 
+
+\bibliographystyle{plain}                         %ieeetr, abbrv, acm, alpha, apalike, ieeetr, plain, siam, unsrt
+%\bibliography{biblio}                               %The files containing all the articles and books you ever referenced. 
+\bibliography{referen}                               %The files containing all the articles and books you ever referenced. 
+%\printindex                                           %Make an index AUTOMATICALLY 
+
+\end{document}

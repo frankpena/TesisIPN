@@ -1,0 +1,511 @@
+\chapter{Marco Teórico}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SECCION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{minipage}{\textwidth}
+%{\normalsize
+%%\tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
+%
+%1. Introducción\\
+%2. Marco Teórico\\
+%2.1 Ondas de superficie y ondas de Faraday\\
+%2.2 Análisis Lineal\\
+%2.3 Análisis No-lineal\\
+%2.4. Simulaciones numéricas\\
+%3. Montaje Experimental\\
+%3.1 Diseño experimental\\
+%3.2 Patrones de Faraday en Reticulados\\
+%3.3 Patrones de Faraday en Contenedores\\
+%3.4 Gotas Suspendidas y Coalescencia de Gotas suspendidas\\
+%4. Resultados: Patrones de Faraday en Reticulados\\
+%4.1 Patrones de Faraday en reticulados de celdas cuadradas\\
+%4.2 Patrones de Faraday en reticulados de celdas triangulares\\
+%4.3 Patrones de Faraday en reticulados de celdas hexagonales\\
+%4.4 Efectos de las dimensiones de las celdas\\
+%4.5 Efectos del tipo de material\\
+%4.6 Efectos de la densidad y viscosidad del líquido\\
+%4.7 Implicaciones teóricas\\
+%5. Resultados: Patrones de Faraday en Contenedores para Capas Multifásicas\\
+%5.1 Deformación de la interface para fases aceite-agua\\
+%5.2 Comparación con simulaciones numéricas\\
+%6. Gotas Suspendidas\\
+%7. Implicaciones Topológicas\\
+%8. Discusión de los Resultados\\
+%9. Conclusiones\\
+%}
+%\end{minipage}
+
+\section{Descripción de un fluido}
+
+En esta sección plantearemos las ecuaciones fundamentales de la hidrodinámica, necesarias para la descripción del experimento de Faraday \cite{Faraday1831a}. En mecánica de fluidos, las ecuaciones que rigen el comportamiento de un fluido \cite{Landau1987, Batchelor2002, Lamb1975}, en su forma más general son:
+
+\begin{equation} \label{eq201}
+   \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{v}) = 0,
+\end{equation}
+
+\nomenclature[g]{$\rho$}{Densidad}
+\nomenclature[n]{$t$}{Tiempo}
+\nomenclature[g]{$\nabla$}{Operador diferencial vectorial}
+\nomenclature[n]{$\vec{v}$}{Vector velocidad}
+
+\begin{equation}\label{eq202}
+   \rho \left[\frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \nabla ) \vec{v}\right] = \vec{F} - \nabla p + \mu  \nabla^2 \vec{v} + (\zeta + \frac{1}{3} \mu) \nabla (\nabla \cdot \vec{v}).
+\end{equation} \medskip
+
+\nomenclature[m]{$\vec{F}$}{Fuerza}
+\nomenclature[n]{$p$}{Presión}
+\nomenclature[g]{$\mu$}{Viscosidad dinámica}
+\nomenclature[g]{$\zeta$}{Segunda viscosidad}
+
+\noindent La ecuación \ref{eq201} expresa el principio de la conservación de la materia y se conoce como la ecuación de continuidad \index{ecuación de continuidad}, donde $\rho$ es la densidad del fluido y $\vec{v} = v_x\hat{i} + v_y\hat{j} + v_z\hat{k}$ la velocidad del flujo. la ecuación \ref{eq202} combina los principios de conservación de la mecánica y la termodinámica aplicados a un volumen de fluido llamada ecuación de Navier-Stokes \index{ecuación de Navier-Stokes}, donde $\vec{F}$ y $p$ es una fuerza y la presión que actúa sobre el volumen de fluido, respectivamente, $\mu$ es la viscosidad dinámica y $\zeta$ es la segunda viscosidad.
+
+En la mayoría de los casos de interés, un líquido convencional, tal como el agua, es incompresible. Un fluido, se dice que es incompresible, cuando la densidad de masa $\rho$ de un elemento de volumen $V$ no cambia notablemente con el tiempo, y ademas, tiene la capacidad de oponerse a la comprensión, es decir, el volumen del fluido permanece constante ante las variaciones de la presión, así
+
+\begin{equation}\label{eq203}
+   \frac{d \rho}{d t} = 0.
+\end{equation}
+
+Generalmente la distribución de densidad inicial de un fluido incompresible es espacialmente uniforme. Por lo tanto, podemos decir que la distribución de densidad es constante en el tiempo y uniforme en el espacio.
+
+Debido a que el término relacionado con la segunda viscosidad resulta de mayor importancia en casos tales como fluidos compresibles, ondas de choque, propagación de sonido en un fluido Newtoniano como el de la ley de Stokes de la atenuación del sonido \cite{Anderson, Dukhin, Litovitz}, podemos omitir este.
+
+Suponiendo que la fuerza $\vec{F}$ que actúa sobre el volumen de fluido, presente en la ecuación \ref{eq202}, es de naturaleza conservativa, es decir,
+
+\begin{equation}\label{eq204}
+   \vec{F} = -\rho \nabla \it\Psi,
+\end{equation}
+
+\nomenclature[n]{$\psi$}{Potencial de energía}
+
+\noindent donde $\it\Psi$ es la energía potencial por unidad de masa y $\rho \it\Psi$ es la energía potencia por unidad de volumen. Ademas, si asumimos que en seno del fluido no existen fuertes variaciones de temperatura, podemos suponer que la viscosidad es espacialmente uniforme, de tal manera que la ecuación de Navier-Stokes para un fluido incompresible se reduce a
+
+\begin{equation}\label{eq205}
+   \rho \left[\frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \nabla ) \vec{v}\right] = - \nabla p  - \rho \nabla \it\Psi + \rho \nu \nabla^2 \vec{v},
+\end{equation}
+
+\noindent donde $\nu=\tfrac{\mu}{\rho}$ es la viscosidad cinemática. En términos generales, el momentum se difunde una distancia del orden $\sqrt{\nu t}$ metros en $t$ segundos como consecuencia de la viscosidad. La viscosidad cinemática del agua a 20$^o$C es de aproximadamente $1.0 \times 10^{-6}$ m$^2$/s \cite{Batchelor2002}. De ello se deduce que la difusión del momento viscoso en agua es un proceso relativamente lento.
+
+El conjunto completo de ecuaciones que gobiernan a un fluido incompresible entonces son:
+
+\begin{equation}\label{eq206}
+   \nabla \cdot \vec{v} = 0,
+\end{equation}
+
+\begin{equation}\label{eq207}
+   \frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \nabla ) \vec{v} = - \frac{\nabla p}{\rho}  - \nabla \it\Psi + \nu \nabla^2 \vec{v}.
+\end{equation}
+
+Aquí, $\rho$ y $\nu$ son consideradas constantes conocidas, y $\it\Psi(\vec{r},t)$ la asumiremos como una función conocida. Por lo tanto, tenemos cuatro ecuaciones: la ecuación \ref{eq206}, además de las tres componentes de la ecuación \ref{eq207}, para cuatro incógnitas, que serian, la presión, $p(\vec{r},t)$ y las tres componentes de la velocidad, $\vec{v}(\vec{r},t)$. Debemos tener en cuenta que una ecuación de conservación de energía es redundante en el caso de flujo de fluido incompresible.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SUBSECCION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Ondas de superficie}      
+
+Consideremos un volumen de agua contenido por un recipiente, el cual posee una profundidad $d$, sobre la superficie del planeta tierra. Asumiendo que este cuerpo es lo suficientemente pequeño en comparación con la Tierra, tal que su superficie imperturbable es aproximadamente plana. Con la coordenada cartesiana $z$ orientada en la vertical, con $z = 0$ correspondiente a la superficie antes mencionada. Supongamos que una onda de pequeña amplitud se propaga horizontalmente a través del agua, siendo $v(r, t)$ el campo de velocidades asociado.
+
+%\begin{figure}[ht]
+%\centerline{
+%\begin{minipage}{0.8\textwidth}
+%\centering
+%\psset{xunit=2pt, yunit=2pt}
+%\begin{pspicture*}(-55,-10)(55,20)
+%   \psplot[linecolor=blue!80, linewidth=1pt, fillcolor=blue!80,fillstyle=solid]{-32}{32}{ x 0.02 div cos}
+%%   \psplot[linecolor=blue!80, linewidth=1pt, fillcolor=blue!80,fillstyle=solid]{31.416}{34.478}{ x 0.02 div cos}
+%   %\psplot[linecolor=blue, linewidth=1pt, fillcolor=red,fillstyle=solid]{-34.478}{34.478}{ x 0.02 div cos}
+%   \psframe[linecolor=blue!80,fillcolor=blue!80, fillstyle=solid](-33,-7)(33,-.6)
+%   \psline[linewidth=1pt,linecolor=black!60](33,-7)(33,3)
+%   \psline[linewidth=1pt,linecolor=black!60](-33,-7)(-33,3)
+%   \psline[linewidth=1pt,linecolor=black!60](-33,-7)(33,-7)
+%   \uput[-135](-35,1.5){\footnotesize $d$}
+%   \psline[linewidth=.5pt,linecolor=black]{->}(-38,0)(-38,3)
+%   \psline[linewidth=.5pt,linecolor=black]{->}(-38,-4)(-38,-7)
+%   \psline[linewidth=.5pt,linecolor=black](-33,-7)(-39,-7)
+%   \psline[linewidth=.5pt,linecolor=black](-33,3)(-39,3)
+%   \psset{trigLabels=true,labelFontSize=\scriptstyle}
+%   \uput[-135](-49.5,10){\footnotesize{ $^x$}}
+%   \psline[linewidth=.5pt,linecolor=black]{->}(-48,10)(-51,7)
+%   \uput[-135](-40,11){\footnotesize $^y$}
+%   \psline[linewidth=.5pt,linecolor=black]{->}(-48,10)(-42,10)
+%   \uput[-135](-46.5,18){\footnotesize $^z$}
+%   \psline[linewidth=.5pt,linecolor=black]{->}(-48,10)(-48,15)
+%%   \uput[-135](52,4){\footnotesize{$z=0$}}
+%%   \psline[linewidth=.5pt,linecolor=black!70,linestyle=dashed]{->}(30,0)(38,0)
+%%   \uput[-135](52,-3){\footnotesize{$z=h$}}
+%%   \psline[linewidth=.5pt,linecolor=black!70,linestyle=dashed]{->}(30,-7)(38,-7)
+%   %\psarc[fillcolor=white]{->}(0,0){2}{-90}{90}
+%   %\pscircle(0,0){1}
+%   %\pswedge[fillstyle=solid,fillcolor=red](0,0){0.5}{0}{45}
+%   %\psellipse(0,0)(10,5)
+%\end{pspicture*}
+%\caption{Ondas de gravedad en la superficie de un volumen de líquido contenido en un recipiente de profundidad $d$.} 
+%\end{minipage}
+%}
+%\end{figure}
+
+Debido a que el agua es un liquido en esencia incompresible, las ecuaciones de movimiento están descritas por \ref{eq206} y \ref{eq207}, las cuales podemos reescribir como:
+
+\begin{equation}\label{eq208}
+   \nabla \cdot \vec{v} = 0,
+\end{equation}
+
+\begin{equation}\label{eq209}
+   \rho \frac{\partial \vec{v}}{\partial t} + \rho (\vec{v} \cdot \nabla ) \vec{v} = - \nabla p - \rho g  \hat{e}_{z} + \mu  \nabla^2 \vec{v},
+\end{equation}
+
+\noindent donde $g$ es la aceleración debida a la gravedad terrestre y se ha reemplazado $\nabla \it\Psi = g \hat{e}_{z}$ el potencial gravitatorio. La presión la podemos escribir
+
+\begin{equation}\label{eq210}
+   p(\vec{r}, t) = p_0 - \rho gz + p_1(\vec{r}, t),
+\end{equation}
+
+\noindent siendo $p_0$ es la presión atmosférica y $p_1$ la presión de perturbación debida a la onda. En ausencia de la onda, la presión del agua a una profundidad $h$ por debajo de la superficie es $p_0+\rho g h$. Sustituyendo en \ref{eq209} y despreciando los términos de segundo orden, tenemos
+
+\begin{equation}\label{eq211}
+   \rho \frac{\partial \vec{v}}{\partial t} \simeq - \nabla p_1 + \mu  \nabla^2 \vec{v},
+\end{equation}
+
+Por otra parte, despreciando la viscosidad, lo cual no es seria un error si consideramos que, por ejemplo, para el agua la viscosidad es despreciable siempre que $\lambda \gg (\tfrac{v^2}{g})^{\tfrac{1}{3}} \sim 5 \times 10^{-5}$m. Así la ecuación \ref{eq211} se reduce a
+
+\begin{equation}\label{eq212}
+   \rho \frac{\partial \vec{v}}{\partial t} \simeq - \nabla p_1.
+\end{equation}
+
+Si tomamos el rotor de esta ecuación obtenemos que 
+
+\begin{equation}\label{eq213}
+   \rho \frac{\partial \vec{\omega}}{\partial t} \simeq 0,
+\end{equation}
+
+\noindent siendo $\vec{\omega} = \nabla \times \vec{v}$ la vorticidad. Lo que nos dice que el campo de velocidad asociado con la onda es irrotacional. La ecuación \ref{eq213} puede ser satisfecha haciendo 
+
+\begin{equation}\label{eq214}
+   \vec{v} = \nabla \phi,
+\end{equation}
+
+\noindent donde $\phi(\vec{r},t)$ es el potencial de velocidad. Sin embargo, aplicando esto a la ecuación \ref{eq208}, se obtiene que el potencial de velocidad satisface la ecuación de Laplace,
+
+\begin{equation}\label{eq215}
+   \nabla^2 \phi = 0.
+\end{equation}
+
+\noindent Finalmente, de las ecuaciones \ref{eq212} y \ref{eq214} se obtiene que la presión en superficie perturbada es
+
+\begin{equation}\label{eq216}
+   p_1 = - \rho \frac{\partial \phi}{\partial t}.
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SUBSUBSECCION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Condiciones de borde}
+
+Ahora debemos considerar las condiciones físicas a ser satisfechas en los limites superior e inferior del agua. El agua está delimitada por la parte de abajo por una superficie sólida situada en $z = -d$. Dado que el agua debe permanecer siempre en contacto con esta superficie, la restricción física adecuada en el límite inferior es $v_z|_{z=-h}= 0$, es decir, la velocidad normal es cero en el límite inferior, o lo que es lo mismo
+
+\begin{equation} \label{eq217}
+   v_z|_{z=-h} = \left. \frac{\partial \phi}{\partial z} \right|_{z=-d} = 0.
+\end{equation}
+
+El límite superior del agua es un poco más complicado, debido a que es una superficie libre. Considerando $\zeta$ como el desplazamiento vertical de esta superficie debido a la onda, tenemos que 
+
+\begin{equation} \label{eq218}
+   v_z|_{z=0} = \left. \frac{\partial \phi}{\partial z} \right|_{z=0} = \frac{\partial \zeta}{\partial t}.
+\end{equation}
+
+La restricción física adecuada para el límite superior es que la presión del agua debe ser igual a la presión atmosférica, ya que no puede haber una discontinuidad de presión a través de una superficie libre, esto en ausencia de la tensión superficial. En consecuencia, a partir de la ecuación \ref{eq210}, obtenemos
+
+\begin{equation}\label{eq219}
+   p_1|_{z=0} = \rho g\zeta,
+\end{equation}
+
+\noindent lo cual implica que
+
+\begin{equation}\label{eq220}
+   \left. \frac{\partial p_1}{\partial t} \right|_{z=0} = \rho g \frac{\partial \zeta}{\partial t} = - \left. \rho g \frac{\partial \phi}{\partial z} \right|_{z=0}, 
+\end{equation}
+
+\noindent donde también se ha empleado la ecuación \ref{eq218}. Combinando esta expresión con la ecuación \ref{eq216} obtenemos,
+
+\begin{equation}\label{eq221}
+   \left. \frac{\partial \phi}{\partial z} \right|_{z=0} = - g^{-1} \left. \frac{\partial^2 \phi}{\partial^2 t} \right|_{z=0},
+\end{equation}
+
+\noindent la cual es la condición para la superficie libre \cite{Lamb1975}.
+
+Suponiendo una solución a la ecuación de onda \ref{eq215} de la forma
+
+\begin{equation}\label{eq222}
+  \phi(\vec{r}, t) = F(z) \cos(\omega t - k x).
+\end{equation}
+
+\noindent esta solución corresponde en realidad a la propagación de onda plana de vector de onda $\vec{k} = k \hat{e}_x$, frecuencia angular $\omega$ y amplitud $F(z)$. Sustituyendo en la ecuación \ref{eq215}, obtenemos, 
+
+\begin{equation}\label{eq223}
+  \frac{d^2 F}{d z^2} - k^2 F = 0,
+\end{equation}
+
+\noindent cuyas soluciones independientes son $e^{(+k z)}$ y $e^{(-k z)}$. Por lo tanto, una solución general de \ref{eq215} toma la forma
+
+\begin{equation}\label{eq224}
+   \phi(x, z, t) = A e^{k z}\cos(\omega t - k x) + B e^{-k z}\cos(\omega t - k x),
+\end{equation}
+
+\noindent donde $A$ y $B$ son constantes arbitrarias. La condición de frontera \ref{eq217} satisface la condición de que $B = A e^{(-2kd)}$, dando
+
+\begin{equation}\label{eq225}
+   \phi(x, z, t) = A \left[e^{k z}+e^{-k(z+2d)}\right] \cos(\omega t - k x),
+\end{equation}
+
+\noindent la condición de frontera \ref{eq221} produce entonces
+
+\begin{equation}\label{eq226}
+   A k \left(1-e^{-2kz}\right)\cos(\omega t - k x) = A \frac{\omega^2}{g} \left(1+e^{-2kz}\right)\cos(\omega t - k x),
+\end{equation}
+
+\noindent la cual se reduce a la relación de dispersión 
+
+\begin{equation}\label{eq227}
+   \omega^2 = g k \tanh(k d).
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SUBSUBSECCION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Energía de las ondas de gravedad}
+
+La velocidad de fase es la velocidad aparente de una fase determinada de una onda. La velocidad de fase está dada en términos de la frecuencia angular de la onda $\omega$ 
+y del vector de onda $k$, por la relación \cite{Narayanan2015},
+
+\begin{equation}\label{eq228}
+   v_p = \frac{\omega}{k},
+\end{equation}
+
+\noindent Empleando la ecuación \ref{eq227} podemos escribir la velocidad de fase de una onda de gravedad que se propagando horizontalmente a través de un volumen de agua 
+de profundidad $d$ como,
+
+\begin{equation}\label{eq229}
+   v_p = (gd)^{1/2} \left[\frac{\tanh(kd)}{kd}\right]^{1/2}.
+\end{equation}
+
+La tasa a la cual viaja la energía almacenada en la onda es la velocidad de grupo, la cual podemos escribir como \cite{Narayanan2015},
+
+\begin{equation}\label{eq230}
+   v_g = \frac{\partial \omega}{\partial k}
+\end{equation}
+
+\noindent así, empleando la ecuacion \ref{eq227} se tiene que, 
+
+\begin{equation}\label{eq231}
+   v_g = \frac{1}{2}\frac{(g\tanh(kd)+gkd(1-\tanh^2(kd)))}{\sqrt{(gk\tanh(kd))}},
+\end{equation}
+
+\noindent además, la razón entre la velocidad de grupo y la velocidad de fase es
+
+\begin{equation}\label{eq232}
+   \frac{v_p}{v_g} = \frac{1}{2} \left[1 + \frac{2kd}{\sinh(2kd)}\right].
+\end{equation}
+
+Se debe tener en cuenta que ni la velocidad de fase ni la velocidad de grupo de una onda de gravedad pueden exceder un cierto valor critico $(gd)^{\frac{1}{2}}$. Por otra parte, el campo de desplazamiento y el campo de velocidad asociados a una onda de gravedad plana de número de onda $k\hat{e}_x$, frecuencia angular $\omega$, y amplitud $a$, son
+
+\begin{eqnarray}
+   \xi_x(x,z,t)& = & -a \frac{\cosh[k(z+d)]}{\sinh(kd)}\cos(\omega t - kx),\label{eq233}\\
+   \xi_x(x,z,t)& = & -a \frac{\cosh[k(z+d)]}{\sinh(kd)}\cos(\omega t - kx),\label{eq234}\\
+   v_x(x,z,t) & = & a \omega \frac{\cosh[k(z+d)]}{\sinh(kd)}\sin(\omega t - kx),\label{eq235}\\
+   v_z(x,z,t) & = & a \omega \frac{\sinh[k(z+d)]}{\sinh(kd)}\cos(\omega t - kx),\label{eq236}
+\end{eqnarray}
+
+\noindent La energía cinética media por unidad de superficie asociada con una onda de gravedad se define como
+
+\begin{equation}\label{eq237}
+      K = \left\langle \int_{- d}^\zeta \frac{1}{2} \rho v^{2}dz \right\rangle,
+\end{equation} 
+
+\noindent dónde
+
+\begin{equation}\label{eq238}
+   \zeta(x, t) = a \sin(\omega t -kx)
+\end{equation}
+
+\noindent que es el desplazamiento vertical de la superficie, y
+
+\begin{equation}\label{eq239}
+   \langle \cdots \rangle = \int_0^{2\pi}(\cdots) \frac{d(kx)}{2\pi}
+\end{equation}
+
+\noindent es un promedio sobre una longitud de onda. Teniendo en cuenta que $\langle \cos^2(\omega t-kx)\rangle = \langle\sin^2(\omega t-kx) \rangle = \tfrac{1}{2} $, se deduce a partir de las ecuaciones de \ref{eq235} y \ref{eq236} que,
+
+\begin{equation}\label{eq240}
+   K = \frac{1}{4} \rho a^2 \omega^2 \int_{-d}^0 \frac{\cosh[2k(z+d)]}{\sinh^2(kd)}dz =  \frac{1}{4} \rho a^2 g \frac{\omega^2}{gk\tanh(kd)}.
+\end{equation}
+
+\noindent Haciendo uso de la relación de dispersión general \ref{eq227}, obtenemos
+
+\begin{equation}\label{eq241}
+   K = \frac{1}{4} \rho g a^2.
+\end{equation}
+
+La energía potencial media de la perturbación por unidad de superficie asociada a una onda de gravedad se define como
+
+\begin{equation}\label{eq242}
+   U = \left\langle \int_{-d}^\zeta \rho g z dz \right\rangle + \frac{1}{2} \rho gd^{2},
+\end{equation}
+
+\noindent de donde obtenemos
+
+\begin{equation}\label{eq243}
+   U = \left\langle \frac{1}{2} \rho g (\zeta^{2}-d^{2}) + \frac{1}{2} \rho d^2 \right\rangle = \frac{1}{2} \rho g \langle \zeta^{2} \rangle,
+\end{equation}
+
+\noindent o lo que es lo mismo,
+
+\begin{equation}\label{eq244}
+   U = \frac{1}{4} \rho g a^{2}.
+\end{equation}
+
+\noindent En otras palabras, la energía potencial media por unidad de superficie de una onda de gravedad es igual a su energía cinética media por unidad de superficie.
+
+Finalmente, la energía total media por unidad de superficie asociada a una onda de gravedad es
+
+\begin{equation}\label{eq245}
+   E = K + U = \frac{1}{2} \rho g a^{2}.
+\end{equation}
+
+\noindent De donde concluimos que la energía depende de la amplitud de la onda en la superficie, pero es independiente de la longitud de onda, o la profundidad del agua.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SUBSUBSECCION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Tensión Superficial}
+
+Las fuerzas de cohesión entre las moléculas en un líquido se distribuye entre todos los átomos vecinos. La moléculas en la superficie no tienen por su parte superior átomos vecinos, exhibiendo fuerzas atractivas más fuertes sobre sus vecinos más cercanos en la superficie. Dicho en otras palabras, La tensión superficial es la tendencia elástica de una superficie fluida que hace que adquiera la menor superficie posible. Incorporando este concepto en nuestro análisis, se puede suponer que la interfaz se encuentra en
+ 
+\begin{equation}\label{eq246}
+   z = \zeta(x, t), 
+\end{equation}
+
+\noindent donde $|\zeta|$ es pequeña. De este modo, la interfaz imperturbable corresponde al plano $z = 0$. El vector unitario normal a la interfaz esta dado por
+
+\begin{equation}\label{eq247}
+    \hat{n} = \frac{\nabla (z -\zeta)}{\nabla (z-\zeta)}.
+\end{equation}  
+
+\noindent de esta ecuación obtenemos que
+
+\begin{eqnarray}
+   n_x & \simeq & - \frac{\partial \zeta}{\partial x}, \label{eq248}\\
+   n_z & \simeq & 1. \label{eq249}
+\end{eqnarray}
+
+\noindent Recordando que la ecuación de Young-Laplace es
+
+\begin{equation}\label{eq250}
+   \Delta p = \gamma \nabla \cdot \hat{n},
+\end{equation}
+
+\noindent donde $\Delta p$ es el cambio de la presión a través de la interfaz en dirección opuesta a $\hat{n}$. A partir de \ref{eq248} y \ref{eq249}, tenemos
+
+\begin{equation}\label{eq251}
+   \nabla \cdot \hat{n} \simeq - \frac{\partial^2 \zeta}{\partial x^2}.
+\end{equation}
+
+\noindent Por lo tanto, la ecuación \ref{eq250} da
+
+\begin{equation}\label{eq252}
+    [p]_{z = 0_-}^{z=0_+} = \gamma \frac{\partial^2 \zeta}{\partial x^2}.
+\end{equation}
+
+Suponiendo que la interfaz se encuentra entre una masa de agua de densidad $\rho$ y profundidad $d$, y el ambiente. El agua sin perturbación se encuentra entre $z=-d$ y $z=0$, y la atmósfera sin perturbación ocupa la región $z>0$. En el límite, en el que se puede despreciar la densidad de la atmósfera, la presión en la atmósfera toma el valor fijo $p_0$, mientras que la presión justo por debajo de la superficie del agua es $p_0-\rho g \zeta + p_1|_{z = 0}$, siendo $p_1$ la presión de la perturbación debido a la onda. De esta manera la ecuación \ref{eq252} adopta la forma
+
+\begin{equation}\label{eq253}
+   \rho g \zeta - p_1|_{z = 0} = \gamma \frac{\partial^2 \zeta}{\partial x^2},
+\end{equation}
+
+\noindent donde $\gamma$ es la tensión superficial en la interfase aire-agua. Sin embargo, $\tfrac{\partial \zeta}{\partial t}= -(\tfrac{\partial \phi}{\partial z})_{z=0}$, donde $\phi$ es el potencial de velocidad perturbado del agua. Así, a partir de \ref{eq216}, $p_1=-\rho\frac{\partial \phi}{\partial t}$, la expresión anterior da
+
+\begin{equation}\label{eq254}
+    g \left. \frac{\partial \phi}{\partial z}\right|_{z=0} + \left. \frac{\partial^2 \phi}{\partial t^2}\right|_{z=0} = \frac{\gamma}{\rho} \left. \frac{\partial^3 \phi}{\partial z \partial^2 x}\right|_{z=0}.
+\end{equation}
+
+\noindent Esta relación, es una generalización de la ecuación \ref{eq221}, la cual es la condición a satisfacer en una superficie libre tomando en cuenta la tensión superficial. De la aplicación de esta condición de frontera a la solución general \ref{eq225}, la cual ya satisface la condición de frontera en la parte inferior del volumen de agua, se obtiene la relación de dispersión
+
+\begin{equation}\label{eq255}
+    \omega^2 = \left(g k + \frac{\gamma k^3}{\rho}\right) \tanh(kd),
+\end{equation}
+
+\noindent que es una generalización de la ecuación \ref{eq227}, pero considerando la tensión superficial.
+
+Tomando en cuenta la tension superficial podemos reescribir la energía cinética media por unidad de área y la energía potencial media por unidad de área como
+
+\begin{equation}\label{eq256}
+   K = \frac{1}{4} (\rho g + \gamma k^2)a^2,
+\end{equation}
+
+\begin{equation}\label{eq257}
+   U = \frac{1}{4} (\rho g + \gamma k^2)a^2,
+\end{equation}
+
+\noindent respectivamente, y la energía total media por unidad de área es 
+
+\begin{equation}
+   E = \frac{1}{2} (\rho g + \gamma k^2)a^2. \label{eq258}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SUBSECCION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Ondas de Faraday}
+
+% Aquí describo lo que es las ondas de Faraday, mencionando las referencias mas importantes.
+
+Las ondas superficiales que se forman en un líquido contenido en un recipiente cuando éste es excitado parametricamente se le suele llamar ondas de Faraday, esto en honor a Michael Faraday quien diera por primera vez una descripción de éstas ondas en su famosa obra, titulada ``On a peculiar class of acoustical figures; and on certain forms assumed by groups of particles upon vibrating elastic surfaces." \cite{Faraday1831a}. Otra de las observaciones claves de M. Faraday fue que la ondas estacionarias oscilan a la mitad de la frecuencia de exitación, ésta es la llamada respuesta subarmónica. Más de un siglo después, esta respuesta subarmónica es explicada por el análisis de estabilidad lineal realizado por T.B. Benjamin, F. Ursell \cite{benjamin1954stability}.
+
+En los últimos 25 años, se han realizado numerosos estudios teóricos y experimentales sobre las ondas de Faraday \cite{miles1990parametrically, Muller1998a}. El interés teórico en el problema de Faraday ha sido impulsado en parte por grandes cantidades de datos experimentales recientes. Las ondas de Faraday son un sistema experimental atractivo y conveniente debido a los numerosos parámetros de control (las propiedades del fluido, la frecuencia del forzamiento, la geometría del contenedor) ademas de que la escala de tiempo para la formación de patrones es típicamente mucho más rápida y facil de ob que para otros sistemas canónicos tales como la convección de Rayleigh-Bénard o la inestabilidad de Richtmyer–Meshkov, entre otras.
+
+Las ondas de Faraday es el ejemplo canónico de cómo se forman patrones espacio-temporales a través de una inestabilidad paramétrica. La mayoria de los trabajos experimentales se ha utilizado fluidos newtonianos sometidos a una o dos aceleraciones sinusoidales, y en otros casos se han empleado fluidos viscoelásticos \cite{Wagner1999}, por mencionar solo alguno de ellos. Una interesante variación del experimento de Faraday es la excitación de un ferrofluido, generando ondas estacionarias en la superficie del ferrofluido mediante la aplicación de corriente alterna y/o directa [Referencias]. Las ondas estacionarias pueden ser excitados por aplicación simultanea de un campo magnético D.C. y una aceleración vertical periódica [55]. Otra variación del problema Faraday se obtiene aplicando un gradiente de temperatura vertical, como en el caso de la convección de Rayleigh-Benard convección, simultáneamente con una vibración vertical [18, 19]. Las inestabilidades paramétricas y la formación de patrones no fluida también se producen en sistemas no fluidos tales como en capas granulares vibradas verticalmente con una [56, 57, 58] o dos [20] componentes de frecuencia de forzamiento.
+
+En muchos casos teóricos se han utilizado modelos de ecuaciones diferenciales parciales para estudiar la inestabilidad paramétrica en un marco general. Estos estudios incluyen investigaciones de la dinámica en la ecuación no lineal de Mathieu con dependencia espacial [59, 60], en la formación de patrones en la ecuación Swift-Hohenberg [61], y en la inestabilidad de Faraday en las ecuaciones Grossman-Pitaevskii modelando un condensado de Bose-Einstein sometido a un campo electromagnético temporalmente periódica [62], por nombrar algunos. % Para el resto de este capítulo, nos centramos en las ondas de Faraday en los fluidos newtonianos forzadas con uno o dos componentes de frecuencia. En la Sección 3.2 se resumen algunos de los trabajos experimentales y teóricos anterior relevante sobre el problema. En las Secciones 3.3 y 3.4 se presentan dos formulaciones matemáticas del problema de Faraday, a saber, las ecuaciones de Navier-Stokes con una frontera libre y las ecuaciones Zhang-Vinals. En la Sección 3.5 que aparece brevemente sus propiedades de estabilidad lineal.
+	
+	    
+     \cite{miles1990parametrically}
+
+\section{Análisis Lineal}
+
+Aquí se describo los papers lineales, escribiendo las ecuaciones más representativas y los resultados de autores previos. Aquí debería también entrar algo sobre ecuaciones de Mathieu. 
+
+%Aquí puedes sacar alguna información de la tesis del mexicano.
+
+\section{Análisis No-lineal}
+
+      Lo mismo de arriba pero incluyendo no-linealidad.
+
+\section{Simulaciones numéricas}
+
+Aquí describo brevemente el trabajo numérico existente sobre patrones de Faraday.
+%       Hay algunos papers interesantes, sobre todo recientes.
+
+
+\newpage
+
+
+
+%\begin{figure}
+%\begin{center}
+%\begin{pspicture}(6,6)
+%   %% Triángulo en rojo:
+%   \psline[linecolor=red](1,1)(5,1)(1,4)(1,1)
+%   %% Curva de Bezier en verde:
+%   \pscurve[linecolor=green,linewidth=2pt,%
+%     showpoints=true](5,5)(3,2)(4,4)(2,3)
+%   %% Círculo en azul con radio 1:
+%   \pscircle[linecolor=blue,linestyle=dashed](3,2.5){1}
+%\end{pspicture}
+%\caption{kdljdsdslj} 
+%\end{center}
+%\end{figure}

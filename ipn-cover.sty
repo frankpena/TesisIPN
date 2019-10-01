@@ -1,0 +1,103 @@
+\ProvidesPackage{ipn-cover}[20190902]
+\RequirePackage{graphicx}
+\usepackage[x11names]{xcolor}
+\@ifpackageloaded{geometry}{}{\RequirePackage[pass]{geometry}}
+\newcommand*{\postgraduate}[1]{\gdef\@postgraduate{#1}}
+\newcommand*{\@postgraduate}{\texttt{\string\postgraduate} Instituto Politécnico Nacional}%Texto por defecto.
+\newcommand*{\degree}[1]{\gdef\@degree{#1}}
+\newcommand*{\@degree}{\texttt{\string\degree} Ph.D.}%Texto por defecto
+\newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}}
+\newcommand*{\@supervisor}{\texttt{\string\supervisor} Tutores...}%Texto por defecto.
+\newcommand*{\cityandyear}[1]{\gdef\@cityandyear{#1}}
+\newcommand*{\@cityandyear}{\texttt{\string\cityandyear} Ciudad de México, 2019}%Texto por defecto.
+\newcommand*{\logouni}[1]{\gdef\@logouni{#1}}
+\newcommand*{\@logouni}{figuras/logo-ipn.png}
+\newcommand*{\logofac}[1]{\gdef\@logofac{#1}}
+\newcommand*{\@logofac}{figuras/logo-esime.png}
+
+\newcommand{\colorvrule}[3]{
+\begingroup\color{#1}\vrule width#2 height#3
+\endgroup}
+\newcommand{\colorhrule}[3]{
+\begingroup\color{#1}\rule{width#2}{height#3}
+%\color{redipn} \rule{0.8\linewidth}{1.5pt}
+\endgroup}
+
+\definecolor{greenipn}{rgb}{0.000,0.608,.302} %0,155,77
+\definecolor{redipn}{rgb}{0.384,0.149,0.251} %98,38,64
+
+\renewcommand*{\maketitle}{%
+\begin{titlepage}
+	\newgeometry{left=2.5cm,right=2.5cm,bottom=2.5cm,top=2.5cm}		% Define los margenes de la Portada
+	\noindent
+	\begin{minipage}[c][1.0\textheight][c]{0.19\textwidth}%
+		\noindent
+		\begin{minipage}[t][0.15\textheight][c]{\textwidth}
+			\begin{center}	
+				\includegraphics[width=0.75\textwidth]{\@logouni}
+			\end{center}
+		\end{minipage}%
+		\newline
+		\noindent
+		\begin{minipage}[c][0.7\textheight][c]{.5\textwidth}
+	        \hspace{.6\textwidth}
+	        \colorvrule{greenipn}{3.0pt}{0.65\textheight}
+		\end{minipage}%
+		\noindent
+		\begin{minipage}[c][0.7\textheight][c]{.5\textwidth}
+	        \colorvrule{redipn}{6.0pt}{0.65\textheight}
+		\end{minipage}%
+		\newline
+		\noindent
+		\begin{minipage}[b][0.15\textheight][c]{\textwidth}
+			\begin{center}	
+				\includegraphics[width=1.0\textwidth]{\@logofac}
+			\end{center}
+		\end{minipage}%
+	\end{minipage}
+	\hfill%
+	\noindent
+	\begin{minipage}[c][1.0\textheight][t]{0.8\textwidth}
+		\begin{center}
+		    %\vspace{0.2cm}
+		    {\large\scshape INSTITUTO POLIT\'ECNICO NACIONAL}
+		    \vspace{0.8cm}
+		    \noindent {\color{redipn} \hrule width 1.0\linewidth height 6pt }
+	        \vspace{0.2cm}
+		    \noindent {\color{greenipn} \hrule width 1.0\linewidth height 3pt }
+	        \vspace{0.8cm}
+	        {\large Escuela Superior de Ingenier\'ia Mec\'anica y El\'ectrica \\
+	        Unidad Azcapotzalco \\
+		    Secci\'on de Estudios de Posgrado e Investigaci\'on\\}
+		    \vspace{1.5cm}
+		    {\Huge\scshape\@title\par}
+		    \vspace{0.5cm}
+        	
+        	\begin{center}
+	        	\noindent {\color{redipn} \rule[0ex]{0.8\linewidth}{3pt}}\\
+    	    	\noindent {\color{greenipn} \rule[2ex]{0.7\linewidth}{1.5pt}}
+	        \end{center}
+        	
+	        \vspace{0.5cm}
+	        {\Large T E S I S\\}
+	        {\large Para obtener el grado de:\\}
+	        {\Large\scshape\@postgraduate\unskip\strut\par}%\@facultyorinstitute
+	        \vspace{1cm}
+		    {Presentada por:}\\
+		    \vspace{.5cm}
+		    {\large\@author}\par
+		    \vspace{0.5cm}
+        	\begin{center}
+    	    	\noindent {\color{greenipn} \rule[0ex]{0.7\linewidth}{1.5pt}}
+	        	\noindent {\color{redipn} \rule[1.5ex]{0.8\linewidth}{3pt}}\\
+	        \end{center}
+		    {DIRECTORES:}\\
+		    \vspace{0.5cm}	
+		    {\@supervisor}
+		    \vspace{1.5cm}	
+		    {\hfill \@cityandyear}
+		\end{center}
+	\end{minipage}
+\end{titlepage}
+}
+\endinput

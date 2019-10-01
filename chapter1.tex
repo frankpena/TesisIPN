@@ -1,0 +1,81 @@
+\chapter*{Introducción}
+\addcontentsline{toc}{chapter}{Introducción}
+
+Cuando un líquido contenido en un recipiente es sometido a vibraciones verticales, a menudo se observa un patrón de ondas estacionarias no-lineales sobre la superficie del mismo. Estas ondas, conocidas como \textit{ondas de Faraday} o \textit{inestabilidades de Faraday} \cite{Faraday1831a, benjamin1954stability} se ven paramétricamente excitadas en el momento en el que las vibraciones verticales superan una cierta frecuencia crítica o aceleración crítica. Michael Faraday \cite{Faraday1831a} se percató de que estas ondas en la superficie del líquido son sub-armónicos de la frecuencia de oscilación al que es sometido el recipiente, mas exactamente que la superficie oscilaba a la mitad de la frecuencia de excitación. Experimentos recientes, en donde se emplea una y hasta dos frecuencias de forzamiento han puesto de manifiesto que no sólo se pueden formar patrones espacialmente regulares de lineas paralelas, cuadrados, círculos y hexágonos, sino también simetrías mucho más complejas, lo que hace que la comprensión de estos tipos de patrones resulten ser un reto \cite{douady1990experimental, edwards1994patterns, binks1997nonlinear, kudrolli1996patterns, arbell2000temporally, arbell2000two, porter2002broken, westra2003patterns}. El umbral para el cual se hace presente la inestabilidad y los patrones observados dependen de la viscosidad y la tensión superficial del líquido, la aceleración de la oscilación, la forma y el tamaño del contenedor..\medskip \bigskip
+
+La descripción matemática del problema está dada por las ecuaciones de Navier-Stokes en un dominio con una superficie libre; y la debido a la frecuencia de excitación este se convierte en un problema no autónomo. En matemáticas, un sistema no autónomo es un sistema de ecuaciones diferenciales ordinarias que depende explícitamente de la variable independiente. En este caso, la variable no autónoma resulta ser el forzamiento externo que influye en los parámetros de fluido cuando el comportamiento oscilante ha iniciado. Por otro lado, el mecanismo de selección de parámetros ha sido investigado empleando herramientas de simetría y teoría de bifurcaciones \cite{silber2000two, rucklidge2003secondary, skeldon2007pattern}. Una teoría lineal de las inestabilidades de Faraday ha sido desarrollada por Benjamin y Ursell \cite{benjamin1954stability}, quienes plantearon que el problema se puede reducir a un conjunto de osciladores de Mathieu. Sin embargo, este análisis se basa en la aproximación de flujo potencial, que se limita a líquidos no viscosos. En el caso de líquidos viscosos el análisis requeriría de la adición teórica de un término de amortiguamiento viscoso. La inclusión de este término se ha utilizado recurrentemente en una serie de análisis lineales \cite{muller1993periodic, kumar1996linear, kumar1994parametric, perlin2000capillary}. No obstante, esta aproximación ignora las capas límites viscosas a lo largo de las paredes del recipiente y por debajo de la superficie, donde se produce disipación adicional. Estos efectos generalmente son tratados mediante la adición de un amortiguamiento heurístico en la ecuación de Mathieu \cite{Landau1987}, el cual es proporcional a la viscosidad cinemática.\medskip \bigskip
+
+Los esfuerzos por comprender las ondas de Faraday, han dado lugar a la aparición de simulaciones numéricas, que implican la solución de las ecuaciones de Navier-Stokes acopladas a un método de seguimiento frontal para el tratamiento de la superficie libre \cite{perinet2009numerical, perinet2012alternating}. En todos estos cálculos se asume que la superficie del líquido es perfectamente plana en el borde de las paredes laterales, donde no hay deslizamiento y se aplican condiciones de borde periódicas \cite{kahouadji2015numerical}. En general, debido a que el sistema es vibrado, la aceleración efectiva de la gravedad varía, ocasionando que la longitud del menisco se alterne de grande a pequeña y viceversa. Con el fin de garantizar la conservación de la masa del fluido, las ondas de superficie son emitidas desde las paredes laterales del recipiente a la frecuencia de excitación. No obstante, estas simulaciones numéricas no tienen en cuenta el realismo de los experimentos, donde la dinámica del menisco es importante \cite{nguyem2011effect}. Por otra parte, la disipación viscosa es la principal causante del amortiguamiento de estas ondas capilares a lo largo de la superficie del fluido. \medskip \bigskip
+ 
+En recipientes pequeños existe un fuerte acoplamiento entre las ondas capilares generadas por el menisco y las ondas de Faraday, donde las ondas capilares se extienden por toda la superficie del líquido. Observaciones experimentales recientes en recipientes cilíndricos de pequeños diámetros indican que se requiere un incremento del umbral de aceleración para lograr generar ondas de Faraday \cite{nguyem2011effect}. En analogía con los resultados experimentales para recipientes pequeños individuales a la escala de centímetros, también se ha observado la formación de patrones regulares sobre una red cuadrada de celdas \cite{Delon2010b}. Luego de un breve estado transitorio, justo por encima del umbral de Faraday, las celdas adyacentes se sincronizan para formar retículos regulares de forma cuadrada sobre toda la red, cuya orientación con respecto a la rejilla depende de una gama de frecuencias de excitación. Los experimentos de Delon y colaboradores \cite{Delon2010b} proporcionan una visión cualitativa de las ondas de superficie forzadas paramétricamente. \medskip \bigskip
+
+Las ondas de Faraday representan un sistema experimental atractivo y oportuno debido a que poseen numerosos parámetros de control. Además, representan un ejemplo canónico de como se forman patrones espacio-temporales a través de una inestabilidad paramétrica. Las fluctuaciones en la frecuencia y amplitud de la fuerza de forzamiento pueden propiciar la transición de un patrón existente bien definido a un estado mixto con una fracción de caos espacio-temporal \cite{kudrolli1996localized, ciliberto1985chaotic}. La escala de tiempo para la formación de patrones es típicamente mucho más rápida y fácil de obtener que para otros sistemas canónicos, tales como la convección de Rayleigh-Bénard \cite{ behringer1982heat, manneville2006rayleigh} o la inestabilidad de Taylor-Couette \cite{czarny2007time, shaqfeh1992effects}. Por consiguiente, el estudio de las ondas de Faraday constituye una manera ventajosa para explorar fenómenos no-lineales más complejos por medio de un dispositivo experimental simple. \medskip \bigskip
+
+En este trabajo se propone estudiar los patrones de ondas de Faraday que surgen cuando se somete a vibraciones verticales un liquido confinado a un contendor y en un reticulado parcialmente lleno compuesto de pequeñas celdas con diferentes geometrías y su dependencia con la frecuencia, la amplitud de las vibraciones y las geometrías de las celdas. Esto con el objetivo de caracterizar el comportamiento del fluido sometido a vibraciones para su aplicacion en la vaporización ultrazonica de gotas liquidas. Con esta finalidad se propone: 1) Variar los rangos de frecuencias $F$ y amplitudes $A$ de la fuerza excitadora; 2) Realizar un barrido más fino del espacio de parámetros ($A$, $F$) para determinar y definir la posible existencia de regiones que separen la formación sincronizada de patrones regulares; 3) Proporcionar un marco cuantitativo de las ondas paramétricamente excitadas en la superficie del fluido para determinar su espectro de frecuencias; y 4) Realizar un análisis detallado utilizando la relación de dispersión de las ondas de Faraday para el forzamiento y la disipación. \medskip \bigskip
+
+
+\section*{Antecedentes} \label{S:2}
+\addcontentsline{toc}{section}{Antecedentes}
+
+En el año 1831, M. Faraday, motivado por los trabajos realizados por Oersted, Wheatstone y Weber, reportó en su diario, que al someter a vibraciones verticales a la superficie de un fluido, éste presenta ondas superficiales que dan lugar a diversos patrones \cite{faraday1936faraday}. Faraday notó que estas ondas superficiales presentan una frecuencia de oscilación, la cual es proporcional a un medio de la frecuencia de excitación \cite{Faraday1831a}. Casi cuatro décadas después del descubrimiento de Faraday, Mathiessen cuestionó la afirmación realizada por Faraday acerca de la respuesta sub-armónica del sistema a las vibraciones verticales \cite{Matthiessen1868}. Tal controversia motivó a Lord Rayleigh a realizar sus propias observaciones\cite{LordRayleigh1883}, reproduciendo así el experimento, y pudiendo corroborar los resultados obtenidos por Faraday. \medskip \bigskip
+
+La naturaleza sub-armónica de la inestabilidad fue finalmente verificada de forma teórica, con el uso de las ecuaciones de la hidrodinámica, por Benjamin y Ursell \cite{benjamin1954stability}, quienes desarrollaron una teoría lineal, confirmando el punto de vista de Faraday y Rayleigh \cite{Faraday1831a, LordRayleigh1883}. El estudio teórico mas extenso del problema de estabilidad ha requerido del uso de simulaciones numéricas, lo que dificulta muchas veces la interpretación y comprensión física. Una expresión analítica para la excitación de los modos sub-armónicos de las ondas de Faraday la obtuvo Müller \textit{et al}. \cite{muller1997analytic}, la cual es aplicable a un amplio rango de frecuencias, abarcando tanto ondas de gravedad en aguas someras como ondas capilares en aguas profundas. Si bien este análisis es aplicable en el límite de una disipación débil, un tratamiento analítico en el límite opuesto lo llevó a cabo Cerda y Tirapegui \cite{cerda1997faraday}. Por otra parte, los aspectos lineales de la inestabilidad de Faraday estudiados desde el trabajo de Benjamin y Ursell fueron revisados por Müller \cite{muller1998linear}. No fue hasta hace muy poco tiempo que las primeras simulaciones numéricas de la dinámica de las ondas de Faraday comenzaron a aparecer en la literatura \cite{takagi2015numerical, kahouadji2015numerical}, que implica la solución completa de las ecuaciones de Navier-Stokes en tres dimensiones. En particular, algunas simulaciones reproducen patrones cuadrados y hexagonales \cite{kityk2005spatiotemporal, kityk2009erratum}. \medskip \bigskip
+
+En los últimos años, se han realizado numerosos estudios experimentales sobre las ondas de Faraday \cite{residori2007two} obteniéndose una enorme cantidad de datos experimentales, lo que ha generado un particular interés teórico en el problema \cite{perinet2009numerical, perinet2012alternating}. Dependiendo de la amplitud o la frecuencia de excitación, la viscosidad del fluido y la geometría del contenedor, el fluido puede exhibir ondas estacionarias que forman patrones en su superficie \cite{arbell2000temporally, rajchenbach2011new}. Los experimentos con una y dos frecuencias de forzamiento muestran que no sólo se pueden formar patrones espacialmente regulares de líneas paralelas, cuadros, círculos y hexágonos, sino también, se pueden formar simetrías más complejas tales como cuasi-patrones, patrones de superlattice, y oscilones \cite{westra2003patterns, rajchenbach2013observation}. Por otra parte, los mecanismos de selección del patrón han sido investigados utilizando herramientas de simetría y teoría de bifurcación \cite{buescu2012bifurcation, skeldon2007pattern}, debido a que la ruptura de la simetría es una consecuencia del acoplamiento no-lineal entre las ondas de superficie. \medskip \bigskip
+
+Mientras casi todos los experimentos clásicos sobre patrones en ondas de Faraday se refieren a recipientes individuales de tamaños y formas variadas, Delon y colaboradores \cite{Delon2010b} observaron la formación de patrones regulares, en el caso en que la interfaz líquido-aire estaba dividida por un reticulado compuesto de pequeñas celdas cuadradas. Notando que luego de un estado transitorio, justo por encima del umbral de Faraday, se observa que las celdas vecinas colaboran sincronizadamente para formar un pico de líquido en sus intersecciones comunes, dando así lugar a un retículo cuadrado regular. En particular, para contenedores de pequeño tamaño, existe un fuerte acoplamiento entre las ondas capilares generadas por el menisco y las ondas de Faraday \cite{Pena-Polo2014, Pena-Polo2017}. \medskip \bigskip
+
+A pesar de los notables avances en la comprensión teórica de las ondas de Faraday \cite{miles1999faraday, mancebo2004standing}, algunas de sus propiedades fundamentales siguen siendo una interrogante; a tal punto que hasta donde se sabe, sorprendentemente la relación de dispersión de las ondas de agua paramétricamente forzadas no ha sido aún establecida de forma explícita. De hecho, esta relación de dispersión a menudo se establece, de forma incorrecta, con la de las ondas superficiales libres no forzadas, en contraste con la evidencia experimental que muestra desviaciones significativas \cite{edwards1994patterns}. Así pues, un conocimiento exacto de la relación de dispersión es de crucial importancia, verbigracia, para explorar la posibilidad de acoplamientos de multiondas y en consecuencia, predecir las simetrías de patrones en la superficie. \medskip \bigskip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\begin{table} % just use this specifier if really needed.
+%    \centering
+%    \begin{threeparttable}
+%    \caption{Mirror movements according to Woods \& Teuber 2}\label{tab:WT}
+%    \begin{tabular}{l@{\hspace{5mm}} *{4}{S[table-format=1.0]} *{4}{S[table-format=2.0]} S[table-format=2.0]S[table-format=1.0]S[table-format=2.0]S[table-format=1.0]}
+%        \toprule
+%        & \multicolumn{4}{c}{CP Norway}&\multicolumn{4}{c}{CP Australia}& \multicolumn{4}{c}{TD children}\\
+%        \cmidrule{2-5}\cmidrule(lr){6-9}\cmidrule{10-13}
+%        & 1 & 2 & 3 & 4     & 1 & 2 & 3 & 4     & 1 & 2 & 3 & 4 \\
+%        \midrule
+%        W\&T score $0$ & 3 & 2 & 6 & 3 & 1  & 3  & 1  & 1  & 16 & 9 & 13 & 8 \\
+%        W\&T score $1$ & 4 & 3 & 3 & 4 & 4  & 3  & 2  & 2  & 5  & 9 & 9  & 8 \\
+%        W\&T score $2$ & 6 & 7 & 7 & 6 & 12 & 10 & 11 & 10 & 1  & 4 & 0  & 6 \\
+%        W\&T score $3$ & 2 & 5 & 1 & 2 & 1  & 2  & 3  & 3  & 0  & 0 & 0  & 0 \\
+%        W\&T score $4$ & 4 & 2 & 2 & 4 & 0  & 0  & 1  & 2  & 0  & 0 & 0  & 0 \\
+%        \bottomrule
+%    \end{tabular}
+%    \begin{tablenotes}
+%        \item[1] Mirror movements in the affected hand, while the unaffected hand is moving at normal speed. 
+%        \item[2] Mirror movements in the affected hand, while the unaffected hand is moving at fast speed. 
+%        \item[3] Mirror movements in the unaffected hand as the affected hand is moving at normal speed. 
+%        \item[4] Mirror movements in the unaffected hand as the affected hand is moving at fast speed. For TD children, the non-dominant hand corresponds to the affected hand.
+%    \end{tablenotes}
+%    \begin{tablenotes}
+%        \item fwsgrt regerdzfbfd
+%    \end{tablenotes}
+%    \end{threeparttable}
+%\end{table}
+
