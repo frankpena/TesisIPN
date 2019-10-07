@@ -1,0 +1,16 @@
+
+\begin{thenomenclature} 
+\nomgroup{G}
+  \item [{$\mu$}]\begingroup Viscosidad dinámica\nomeqref {1.2}\nompageref{5}
+  \item [{$\nabla$}]\begingroup Operador diferencial vectorial\nomeqref {1.1}\nompageref{5}
+  \item [{$\rho$}]\begingroup Densidad\nomeqref {1.1}\nompageref{5}
+  \item [{$\zeta$}]\begingroup Segunda viscosidad\nomeqref {1.2}\nompageref{5}
+\nomgroup{M}
+  \item [{$\vec{F}$}]\begingroup Fuerza\nomeqref {1.2}\nompageref{5}
+\nomgroup{N}
+  \item [{$\psi$}]\begingroup Potencial de energía\nomeqref {1.4}\nompageref{6}
+  \item [{$\vec{v}$}]\begingroup Vector velocidad\nomeqref {1.1}\nompageref{5}
+  \item [{$p$}]\begingroup Presión\nomeqref {1.2}\nompageref{5}
+  \item [{$t$}]\begingroup Tiempo\nomeqref {1.1}\nompageref{5}
+
+\end{thenomenclature}
