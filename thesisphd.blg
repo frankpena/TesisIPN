@@ -3,7 +3,17 @@ A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: chapter1.aux
 A level-1 auxiliary file: chapter2.aux
 The style file: plain.bst
-Database file #1: referen.bib
-Warning--empty publisher in Batchelor2002
-Warning--empty publisher in Muller1998a
-(There were 2 warnings)
+Database file #1: reference.bib
+Warning--I didn't find a database entry for "Faraday1831a"
+Warning--I didn't find a database entry for "Landau1987"
+Warning--I didn't find a database entry for "Batchelor2002"
+Warning--I didn't find a database entry for "Lamb1975"
+Warning--I didn't find a database entry for "Anderson"
+Warning--I didn't find a database entry for "Dukhin"
+Warning--I didn't find a database entry for "Litovitz"
+Warning--I didn't find a database entry for "Narayanan2015"
+Warning--I didn't find a database entry for "benjamin1954stability"
+Warning--I didn't find a database entry for "miles1990parametrically"
+Warning--there's a number but no volume in Faraday1831
+Warning--empty publisher in Faraday2008
+(There were 12 warnings)
