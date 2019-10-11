@@ -7,8 +7,6 @@ Scanning style file C:/Users/fpena/AppData/Local/Programs/MiKTeX 2.9/makeindex/n
 ** Input style error (file = C:/Users/fpena/AppData/Local/Programs/MiKTeX 2.9/makeindex/nomencl/nomencl.ist, line = 38):
    -- Unknown specifier lethead_flag.
 ....done (12 attributes redefined, 3 ignored).
-Scanning input file thesisphd.nlo....done (9 entries accepted, 0 rejected).
-Sorting entries....done (31 comparisons).
-Generating output file thesisphd.nls....done (16 lines written, 0 warnings).
-Output written in thesisphd.nls.
+Scanning input file thesisphd.nlo...done (0 entries accepted, 0 rejected).
+Nothing written in thesisphd.nls.
 Transcript written in thesisphd.nlg.

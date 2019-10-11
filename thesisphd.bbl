@@ -1,4 +1,58 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Arbell2002}
+H.~Arbell and J.~Fineberg.
+\newblock {Pattern formation in two-frequency forced parametric waves}.
+\newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
+  Physics}, 65(3):1--29, 2002.
+
+\bibitem{Armbruster1989}
+Dieter Armbruster, John Guckenheimer, and Seaunghwan Kim.
+\newblock {Chaotic dynamics in systems with square symmetry}.
+\newblock {\em Physics Letters A}, 140:416--420, 1989.
+
+\bibitem{Bechhoefer1995}
+John Bechhoefer, Valerie Ego, Sebastien Manneville, and Brad Johnson.
+\newblock {An experimental study of the onset of parametrically pumped surface
+  waves in viscous fluids}.
+\newblock {\em Journal Of Fluid Mechanics}, 288:325--350, 1995.
+
+\bibitem{Bechhoefer1996}
+John Bechhoefer and Brad Johnson.
+\newblock {A Simple Model for Faraday Waves}.
+\newblock {\em arXiv}, preprint p:8, 1996.
+
+\bibitem{Benjamin1954}
+T.~B. Benjamin and F.~Ursell.
+\newblock {The Stability of the Plane Free Surface of a Liquid in Vertical
+  Periodic Motion}.
+\newblock {\em Proceedings of the Royal Society A: Mathematical, Physical and
+  Engineering Sciences}, 225(1163):505--515, 1954.
+
+\bibitem{Ciliberto1984}
+S.~Ciliberto and J.~P. Gollub.
+\newblock {Pattern competition leads to chaos}.
+\newblock {\em Physical Review Letters}, 52(11):922--925, 1984.
+
+\bibitem{Ciliberto1985}
+S.~Ciliberto and Jerry~P. Gollub.
+\newblock {Chaotic mode competition in parametrically forced surface waves}.
+\newblock {\em Journal of Fluid Mechanics}, 158:381--398, 1985.
+
+\bibitem{Dodge1965}
+Franklin~T. Dodge, Daniel~D. Kana, and H.~Norman Abramson.
+\newblock {Liquid Surface Oscillations in}.
+\newblock {\em AIAA Journal}, 3(4):685--695, 1965.
+
+\bibitem{Douady1990}
+S.~Douady.
+\newblock {Experimental study of the Faraday instability}.
+\newblock {\em Journal of Fluid Mechanics}, 221:383, 1990.
+
+\bibitem{Edwards1994}
+W.~S. Edwards and S.~Fauve.
+\newblock {Patterns and quasi-patterns in the Faraday experiment}.
+\newblock {\em Journal of Fluid Mechanics}, 278:123, 1994.
 
 \bibitem{Faraday1831}
 Michael Faraday.
@@ -7,10 +61,88 @@ Michael Faraday.
 \newblock {\em Philosophical Transactions of the Royal Society of London},
   (January):379--397, 1831.
 
-\bibitem{Faraday2008}
-Michael Faraday and {Thomas Martin}.
-\newblock {\em {FARADAY'S DIARY}}.
-\newblock 2008.
+\bibitem{Feng1989}
+Z.~C. Feng and P.~R. Sethna.
+\newblock {Symmetry-breaking bifurcations in resonant surface waves}.
+\newblock {\em Journal of Fluid Mechanics}, 199:495--518, 1989.
+
+\bibitem{Gollub1983}
+J.~P. Gollub and Christopher~W. Meyer.
+\newblock {Symmetry-breaking instabilities on a fluid surface}.
+\newblock {\em Physica D: Nonlinear Phenomena}, 6(3):337--346, 1983.
+
+\bibitem{Gu1987}
+X.~M. Gu and P.~R. Sethna.
+\newblock {Resonant surface waves and chaotic phenomena}.
+\newblock {\em Journal of Fluid Mechanics}, 183:543--565, 1987.
+
+\bibitem{Gu1988}
+XM~Gu, PR~Sethna, and Amitabh Narain.
+\newblock On three-dimensional nonlinear subharmonic resonant surface waves in
+  a fluid: Part i—theory.
+\newblock {\em Journal of applied mechanics}, 55(1):213--219, 1988.
+
+\bibitem{Hill1886}
+G.~W. Hill.
+\newblock {On the part of the motion of the lunar perigee which is a function
+  of the mean motions of the sun and moon}.
+\newblock {\em Acta Mathematica}, 8(1):1--36, 1886.
+
+\bibitem{Huepe2006}
+Cristi{\'{a}}n Huepe, Yu~Ding, Paul Umbanhowar, and Mary Silber.
+\newblock {Forcing function control of Faraday wave instabilities in viscous
+  shallow fluids}.
+\newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
+  Physics}, 73(1):1--12, 2006.
+
+\bibitem{Keolian1981}
+R.~Keolian, L.~A. Turkevich, Seth~J. Putterman, I.~Rudnick, and J.~A. Rudnick.
+\newblock {Subharmonic sequences in the faraday experiment: Departures from
+  period doubling}.
+\newblock {\em Physical Review Letters}, 47(16):1133--1136, 1981.
+
+\bibitem{Kityk2002}
+A.~V. Kityk, Christian Wagner, Klaus Knorr, and Hanns~Walter M{\"{u}}ller.
+\newblock {Phase relaxation of Faraday surface waves}.
+\newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
+  Physics}, 65(6):3--6, 2002.
+
+\bibitem{Kudrolli1998}
+A.~Kudrolli, B.~Pier, and Jerry~P. Gollub.
+\newblock {Superlattice patterns in surface waves}.
+\newblock {\em Physica D: Nonlinear Phenomena}, 123(1-4):99--111, 1998.
+
+\bibitem{Kumar1996}
+Krishna Kumar.
+\newblock {Linear Theory of Faraday Instability in Viscous Liquids}.
+\newblock {\em Proceedings of the Royal Society A: Mathematical, Physical and
+  Engineering Sciences}, 452(1948):1113--1126, 1996.
+
+\bibitem{Kumar1994}
+Krishna Kumar and Laurette~S. Tuckerman.
+\newblock {Parametric instability of the interface between two fluids}.
+\newblock {\em J Fluid Mech}, pages 279--49, 1994.
+
+\bibitem{Landau1988}
+Lev Landau and Evgeny~Mikhailovich Lifshitz.
+\newblock {\em {F{\'{i}}sica estad{\'{i}}stica Vol. 5}}.
+\newblock 1988.
+
+\bibitem{Mancebo2002}
+Francisco~J. Mancebo and Jos{\'{e}}~M. Vega.
+\newblock {Faraday Instability Threshold In Large-aspect-ratio Containers}.
+\newblock {\em Journal Of Fluid Mechanics}, 467:307--330, 2002.
+
+\bibitem{Martin1832}
+Thomas Martin.
+\newblock {\em {Faraday's diary}}.
+\newblock 1832.
+
+\bibitem{Mathieu1868}
+Emile Mathieu.
+\newblock {Journal de Mathematiques Pures et Appliques}.
+\newblock {\em Journal de Math{\'{e}}matiques Pures et Appliqu{\'{e}}es},
+  13:137--203, 1868.
 
 \bibitem{Matthiessen1868}
 Ludwig Matthiessen.
@@ -18,15 +150,110 @@ Ludwig Matthiessen.
   Fl{\"{u}}ssigkeiten betreffend}.
 \newblock {\em Annalen der Physik Leipzig}, 134:107--117, 1868.
 
+\bibitem{Meron1986}
+Ehud Meron and Itamar Procaccia.
+\newblock {Low-dimensional chaos in surface waves: Theoretical analysis of an
+  experimennt}.
+\newblock {\em Physical Review A}, 34(4):3221--3237, 1986.
+
+\bibitem{Miles1984}
+John~W. Miles.
+\newblock {Nonlinear Faraday resonance}.
+\newblock {\em Journal of Fluid Mechanics}, 146:285--302, 1984.
+
+\bibitem{Miles1993}
+John~W. Miles.
+\newblock {On Faraday Waves}.
+\newblock {\em Journal of Fluid Mechanics}, 248(1):671--683, 1993.
+
+\bibitem{Miles1990}
+John~W. Miles and D.~M. Henderson.
+\newblock {Parametrically Forced Surface-Waves}.
+\newblock {\em Annual Review of Fluid Mechanics}, 22:143--165, 1990.
+
+\bibitem{Muller1993}
+Hanns~Walter M{\"{u}}ller.
+\newblock {Periodic triangular patterns in the faraday experiment}.
+\newblock {\em Physical Review Letters}, 71(20):3287--3290, 1993.
+
 \bibitem{Muller1998a}
 Hanns~Walter M{\"{u}}ller.
 \newblock {Linear aspects of the Faraday instability}.
 \newblock {\em A Perspective Look at Nonlinear Media: From Physics to Biology
   and Social Sciences}, 503(1883):45--60, 1998.
 
-\bibitem{Wagner1999}
-Christian Wagner, Hanns~Walter M{\"{u}}ller, and Klaus Knorr.
-\newblock {Faraday waves on a viscoelastic liquid}.
-\newblock {\em Physical Review Letters}, 83(2):308, 1999.
+\bibitem{Muller1997}
+Hanns~Walter M{\"{u}}ller, H~Wittmer, Christian Wagner, J~Albers, and Klaus
+  Knorr.
+\newblock {Analytic stability theory for Faraday waves and the observation of
+  the harmonic surface response}.
+\newblock {\em Physical Review Letters}, 78(12):2357--2360, 1997.
+
+\bibitem{NguyemThuLam2011}
+K.D. {Nguyem Thu Lam} and H.~Caps.
+\newblock {Effect of a capillary meniscus on the Faraday instability
+  threshold}.
+\newblock {\em European Physical Journal E}, 34(10):112, 2011.
+
+\bibitem{Perinet2010}
+Nicolas P{\'{e}}rinet, Damir Juric, and Laurette~S. Tuckerman.
+\newblock {A Numerical Study of Faraday Waves}.
+\newblock {\em 7th International Conference on multiphase flow}, pages 1--12,
+  2010.
+
+\bibitem{Perinet2012}
+Nicolas P{\'{e}}rinet, Damir Juric, and Laurette~S. Tuckerman.
+\newblock {Alternating hexagonal and striped patterns in faraday surface
+  waves}.
+\newblock {\em Physical Review Letters}, 109(16):1--5, 2012.
+
+\bibitem{Perlin2000}
+Marc Perlin and William~W Schultz.
+\newblock {Capillary effects on surfacewaves}.
+\newblock {\em Annual Review of Fluid Mechanics}, 32:241--274, 2000.
+
+\bibitem{Rayleigh1883a}
+Lord Rayleigh.
+\newblock {On Maintained Vibrations}.
+\newblock {\em Philosophical Magazine}, 15:229--235, 1883.
+
+\bibitem{Rayleigh1883b}
+Lord Rayleigh.
+\newblock {On the crispations of fluid resting upon a vibrating support}.
+\newblock {\em Philosophical Magazine Series 5}, 16(97):50--58, 1883.
+
+\bibitem{Rayleigh1887}
+Lord Rayleigh.
+\newblock {On the Maintenance of Vibrations by Forces of Double ffrequency, and
+  on the Propagation of Waves through a Medium endowed with a Periodic
+  Structure.}
+\newblock {\em Philosophical magazine and Journal of science},
+  24(147):145--159, 1887.
+
+\bibitem{Residori2007}
+S.~Residori, A.~Guarino, and U.~Bortolozzo.
+\newblock {Two-mode competition in Faraday instability}.
+\newblock {\em Europhysics Letters (EPL)}, 77(4):44003, 2007.
+
+\bibitem{Simonelli1989}
+F.~Simonelli and Jerry~P. Gollub.
+\newblock {Surface wave mode interactions: Effects of symmetry and degeneracy}.
+\newblock {\em Journal of Fluid Mechanics}, 199:471--494, 1989.
+
+\bibitem{Umeki1989}
+Makoto Umeki and Tsutomu Kambe.
+\newblock {Nonlinear Dynamics and Chaos in Parametrically Excited Surface
+  Waves}, 1989.
+
+\bibitem{Virnig1988}
+JC~Virnig, AS~Berman, and PR~Sethna.
+\newblock On three-dimensional nonlinear subharmonic resonant surface waves in
+  a fluid: Part ii—experiment.
+\newblock {\em Journal of applied mechanics}, 55(1):220--224, 1988.
+
+\bibitem{Westra2003}
+Mark-Tiele Westra, Doug~J. Binks, and Willem {Van De Water}.
+\newblock {Patterns of Faraday waves}.
+\newblock {\em Journal of Fluid Mechanics}, 496:1--32, 2003.
 
 \end{thebibliography}
