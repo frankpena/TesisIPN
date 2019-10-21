@@ -34,6 +34,8 @@
 \usepackage{ipn-cover}					% Formato de portada
 \usepackage[x11names]{xcolor}
 \usepackage{lineno}
+\usepackage{caption}
+\usepackage{subcaption}
 
 %% Crea los grupos de la nomenclatura. m para las mayusculas, n para las minusculas y g para las letras griegas.
 % -----------------------------------------
@@ -64,12 +66,12 @@
 \pagestyle{fancy} % Enables the custom headers/footers
 \fancyhf{}
 % Headers
-\lhead{AI} % Left header
-\chead{AC} % Center header - currently printing the article title
-\rhead{AD} % Right header
+\lhead{\title} % Left header
+\chead{} % Center header - currently printing the article title
+\rhead{} % Right header
 % Footers
-\lfoot{DI} % Left footer
-\cfoot{DC} % Center footer
+\lfoot{} % Left footer
+\cfoot{} % Center footer
 \rfoot{\thepage} % Right footer
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}

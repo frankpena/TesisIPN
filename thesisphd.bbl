@@ -1,15 +1,31 @@
 \begin{thebibliography}{10}
 
+\bibitem{Ajay2013}
+M~Ajay and T~N~C Anand.
+\newblock {Study of Ultrasonic Atomization}.
+\newblock {\em ILASS- Asia}, pages 1--4, 2013.
+
+\bibitem{Arbell2000}
+H.~Arbell and J.~Fineberg.
+\newblock {Temporally harmonic oscillons in Newtonian fluids}.
+\newblock {\em Physical Review Letters}, 85(4):756--759, 2000.
+
 \bibitem{Arbell2002}
 H.~Arbell and J.~Fineberg.
 \newblock {Pattern formation in two-frequency forced parametric waves}.
 \newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
   Physics}, 65(3):1--29, 2002.
 
-\bibitem{Armbruster1989}
-Dieter Armbruster, John Guckenheimer, and Seaunghwan Kim.
-\newblock {Chaotic dynamics in systems with square symmetry}.
-\newblock {\em Physics Letters A}, 140:416--420, 1989.
+\bibitem{Avvaru2006}
+Balasubrahmanyam Avvaru, Mohan~N. Patil, Parag~R. Gogate, and Aniruddha~B.
+  Pandit.
+\newblock {Ultrasonic atomization: Effect of liquid phase properties}.
+\newblock {\em Ultrasonics}, 44(2):146--158, 2006.
+
+\bibitem{Barreras2002}
+F.~Barreras, H.~Amaveda, and A.~Lozano.
+\newblock {Transient high-frequency ultrasonic water atomization}.
+\newblock {\em Experiments in Fluids}, 33(3):405--413, 2002.
 
 \bibitem{Bechhoefer1995}
 John Bechhoefer, Valerie Ego, Sebastien Manneville, and Brad Johnson.
@@ -29,6 +45,26 @@ T.~B. Benjamin and F.~Ursell.
 \newblock {\em Proceedings of the Royal Society A: Mathematical, Physical and
   Engineering Sciences}, 225(1163):505--515, 1954.
 
+\bibitem{Boukra2009}
+Madjid Boukra, Alain Cartellier, {\'{E}}ric Ducasse, Pierre Gajan, Marie Lalo,
+  Thomas Noel, and Alain Strzelecki.
+\newblock {Use of Faraday instabilities to enhance fuel pulverisation in
+  air-blast atomisers}.
+\newblock {\em Comptes Rendus - Mecanique}, 337(6-7):492--503, 2009.
+
+\bibitem{Cartellier2006}
+Alain Cartellier and Pierre Gajan.
+\newblock {instabilities Changes in Aeronautical and Space Systems –
+  Challenges for On-board Energy IMPROVEMENT OF FUEL PULVERIZATION IN AIRBLAST
+  ATOMIZERS BY USE OF FARADAY INSTABILITIES}.
+\newblock (June), 2006.
+
+\bibitem{Chen2015}
+Pu~Chen, Sinan G{\"{u}}ven, Osman~Berk Usta, Martin~L. Yarmush, and Utkan
+  Demirci.
+\newblock {Biotunable Acoustic Node Assembly of Organoids}.
+\newblock {\em Advanced Healthcare Materials}, 4(13):1937--1943, 2015.
+
 \bibitem{Ciliberto1984}
 S.~Ciliberto and J.~P. Gollub.
 \newblock {Pattern competition leads to chaos}.
@@ -39,10 +75,30 @@ S.~Ciliberto and Jerry~P. Gollub.
 \newblock {Chaotic mode competition in parametrically forced surface waves}.
 \newblock {\em Journal of Fluid Mechanics}, 158:381--398, 1985.
 
+\bibitem{Delon2010}
+G.~Delon, Denis Terwagne, N.~Adami, A.~Bronfort, N.~Vandewalle, S.~Dorbolo, and
+  H.~Caps.
+\newblock {Faraday instability on a network}.
+\newblock {\em Chaos}, 20(4):1--2, 2010.
+
+\bibitem{Dobre2002}
+M.~Dobre and L.~Bolle.
+\newblock {Practical design of ultrasonic spray devices: Experimental testing
+  of several atomizer geometries}.
+\newblock {\em Experimental Thermal and Fluid Science}, 26(2-4):205--211, 2002.
+
 \bibitem{Dodge1965}
 Franklin~T. Dodge, Daniel~D. Kana, and H.~Norman Abramson.
-\newblock {Liquid Surface Oscillations in}.
+\newblock {Liquid Surface Oscillations in Longitudinally Excited Rigid
+  Cylindrical Containers}.
 \newblock {\em AIAA Journal}, 3(4):685--695, 1965.
+
+\bibitem{Donnelly2004}
+T.~D. Donnelly, J.~Hogan, A.~Mugler, N.~Schommer, M.~Schubmehl, Andrew~J.
+  Bernoff, and B.~Forrest.
+\newblock {An experimental study of micron-scale droplet aerosols produced via
+  ultrasonic atomization}.
+\newblock {\em Physics of Fluids}, 16(8):2843--2851, 2004.
 
 \bibitem{Douady1990}
 S.~Douady.
@@ -61,26 +117,21 @@ Michael Faraday.
 \newblock {\em Philosophical Transactions of the Royal Society of London},
   (January):379--397, 1831.
 
-\bibitem{Feng1989}
-Z.~C. Feng and P.~R. Sethna.
-\newblock {Symmetry-breaking bifurcations in resonant surface waves}.
-\newblock {\em Journal of Fluid Mechanics}, 199:495--518, 1989.
-
 \bibitem{Gollub1983}
 J.~P. Gollub and Christopher~W. Meyer.
 \newblock {Symmetry-breaking instabilities on a fluid surface}.
 \newblock {\em Physica D: Nonlinear Phenomena}, 6(3):337--346, 1983.
 
-\bibitem{Gu1987}
-X.~M. Gu and P.~R. Sethna.
-\newblock {Resonant surface waves and chaotic phenomena}.
-\newblock {\em Journal of Fluid Mechanics}, 183:543--565, 1987.
-
 \bibitem{Gu1988}
-XM~Gu, PR~Sethna, and Amitabh Narain.
-\newblock On three-dimensional nonlinear subharmonic resonant surface waves in
-  a fluid: Part i—theory.
+X~M Gu, P~R Sethna, and Amitabh Narain.
+\newblock {On three-dimensional nonlinear subharmonic resonant surface waves in
+  a fluid: Part I—theory}.
 \newblock {\em Journal of applied mechanics}, 55(1):213--219, 1988.
+
+\bibitem{Henstock1974}
+W~Henstock and R~L Sani.
+\newblock {On the stability of the free surface of a cylindrical}.
+\newblock {\em Lett. Heat Mass Transfer}, 1(5):95, 1974.
 
 \bibitem{Hill1886}
 G.~W. Hill.
@@ -95,6 +146,12 @@ Cristi{\'{a}}n Huepe, Yu~Ding, Paul Umbanhowar, and Mary Silber.
 \newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
   Physics}, 73(1):1--12, 2006.
 
+\bibitem{Kahouadji2015}
+L.~Kahouadji, Nicolas P{\'{e}}rinet, Laurette~S. Tuckerman, S.~Shin,
+  J.~Chergui, and Damir Juric.
+\newblock {Numerical simulation of supersquare patterns in Faraday waves}.
+\newblock {\em Journal of Fluid Mechanics}, 772:R2, 2015.
+
 \bibitem{Keolian1981}
 R.~Keolian, L.~A. Turkevich, Seth~J. Putterman, I.~Rudnick, and J.~A. Rudnick.
 \newblock {Subharmonic sequences in the faraday experiment: Departures from
@@ -106,6 +163,12 @@ A.~V. Kityk, Christian Wagner, Klaus Knorr, and Hanns~Walter M{\"{u}}ller.
 \newblock {Phase relaxation of Faraday surface waves}.
 \newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
   Physics}, 65(6):3--6, 2002.
+
+\bibitem{Kudrolli1996}
+A.~Kudrolli and Jerry~P. Gollub.
+\newblock {Patterns and spatiotemporal chaos in parametrically forced surface
+  waves: a systematic survey at large aspect ratio}.
+\newblock {\em Physica D: Nonlinear Phenomena}, 97(1-3):133--154, 1996.
 
 \bibitem{Kudrolli1998}
 A.~Kudrolli, B.~Pier, and Jerry~P. Gollub.
@@ -127,6 +190,24 @@ Krishna Kumar and Laurette~S. Tuckerman.
 Lev Landau and Evgeny~Mikhailovich Lifshitz.
 \newblock {\em {F{\'{i}}sica estad{\'{i}}stica Vol. 5}}.
 \newblock 1988.
+
+\bibitem{Lano1962}
+Robert~J. Lang.
+\newblock {Ultrasonic Atomization of Liquids}.
+\newblock {\em The Journal of the Acoustical Society of America},
+  341(1954):28--30, 1962.
+
+\bibitem{Lierke1967}
+EG~Lierke and G~Griesshammer.
+\newblock The formation of metal powders by ultrasonic atomization of molten
+  metals.
+\newblock {\em Ultrasonics}, 5(4):224--228, 1967.
+
+\bibitem{Louis2011}
+E.~Louis, J.~A. Miralles, G.~Chiappe, A.~Baz{\'{a}}n, J.~P. Adrados, and
+  P.~Cobo.
+\newblock {Faraday instability in a vessel with a well: A numerical analysis}.
+\newblock {\em Physics of Fluids}, 23(11), 2011.
 
 \bibitem{Mancebo2002}
 Francisco~J. Mancebo and Jos{\'{e}}~M. Vega.
@@ -157,7 +238,7 @@ Ehud Meron and Itamar Procaccia.
 \newblock {\em Physical Review A}, 34(4):3221--3237, 1986.
 
 \bibitem{Miles1984}
-John~W. Miles.
+John~W Miles.
 \newblock {Nonlinear Faraday resonance}.
 \newblock {\em Journal of Fluid Mechanics}, 146:285--302, 1984.
 
@@ -195,22 +276,32 @@ K.D. {Nguyem Thu Lam} and H.~Caps.
   threshold}.
 \newblock {\em European Physical Journal E}, 34(10):112, 2011.
 
-\bibitem{Perinet2010}
-Nicolas P{\'{e}}rinet, Damir Juric, and Laurette~S. Tuckerman.
-\newblock {A Numerical Study of Faraday Waves}.
-\newblock {\em 7th International Conference on multiphase flow}, pages 1--12,
-  2010.
+\bibitem{Ockendon1973}
+J.~R. Ockendon and H.~Ockendon.
+\newblock {Resonant surface waves}.
+\newblock {\em Journal of Fluid Mechanics}, 59(2):397--413, 1973.
 
-\bibitem{Perinet2012}
+\bibitem{Perinet2009}
 Nicolas P{\'{e}}rinet, Damir Juric, and Laurette~S. Tuckerman.
-\newblock {Alternating hexagonal and striped patterns in faraday surface
-  waves}.
-\newblock {\em Physical Review Letters}, 109(16):1--5, 2012.
+\newblock {Numerical simulation of Faraday waves}.
+\newblock {\em Journal of Fluid Mechanics}, 635:1--26, 2009.
 
 \bibitem{Perlin2000}
 Marc Perlin and William~W Schultz.
 \newblock {Capillary effects on surfacewaves}.
 \newblock {\em Annual Review of Fluid Mechanics}, 32:241--274, 2000.
+
+\bibitem{Peskin1963}
+Richard~L. Peskin and Roland~J. Raco.
+\newblock {Ultrasonic Atomization of Liquids}.
+\newblock {\em The Journal of The Acoustical Society of America}, 35(9):1--4,
+  1963.
+
+\bibitem{Pohlman1965}
+Reimar Pohlman and Klaus Stamm.
+\newblock {\em Untersuchung zum Mechanismus der Ultraschallvernebelung an
+  Fl{\"u}ssigkeitsoberfl{\"a}chen im Hinblick auf technische Anwendungen}.
+\newblock Springer, 1965.
 
 \bibitem{Rayleigh1883a}
 Lord Rayleigh.
@@ -235,25 +326,69 @@ S.~Residori, A.~Guarino, and U.~Bortolozzo.
 \newblock {Two-mode competition in Faraday instability}.
 \newblock {\em Europhysics Letters (EPL)}, 77(4):44003, 2007.
 
+\bibitem{Silber2000}
+Mary Silber, Chad~M. Topaz, and Anne~C. Skeldon.
+\newblock {Two-frequency forced Faraday waves: Weakly damped modes and pattern
+  selection}.
+\newblock {\em Physica D: Nonlinear Phenomena}, 143(1-4):205--225, 2000.
+
 \bibitem{Simonelli1989}
 F.~Simonelli and Jerry~P. Gollub.
 \newblock {Surface wave mode interactions: Effects of symmetry and degeneracy}.
 \newblock {\em Journal of Fluid Mechanics}, 199:471--494, 1989.
 
-\bibitem{Umeki1989}
-Makoto Umeki and Tsutomu Kambe.
-\newblock {Nonlinear Dynamics and Chaos in Parametrically Excited Surface
-  Waves}, 1989.
+\bibitem{Sindayihebura1997}
+D~Sindayihebura, M~Dobre, and L~Bolle.
+\newblock {Experimental study of thin liquid film ultrasonic atomization}.
+\newblock In {\em 4th World Conference on Experimental Heat Transfer, Fluid
+  Mechanics and Thermodynamics}, pages 1--7, 1997.
+
+\bibitem{Skeldon2007}
+A.~C. Skeldon and G.~Guidoboni.
+\newblock {Pattern selection for Faraday waves in an incompressible viscous
+  fluid}.
+\newblock {\em SIAM Journal on Applied Mathematics}, 67(4):1064--1100, 2007.
+
+\bibitem{Takagi2011}
+Kentaro Takagi and Takeshi Matsumoto.
+\newblock {Numerical simulation of two-dimensional Faraday waves with
+  phase-field modelling}.
+\newblock {\em Journal Fluid Mechanics}, 686:409--425, 2011.
+
+\bibitem{Takagi2015}
+Kentaro Takagi and Takeshi Matsumoto.
+\newblock {Numerical simulation of Faraday waves oscillated by two-frequency
+  forcing}.
+\newblock {\em Physics of Fluids}, 27(3), 2015.
+
+\bibitem{Topp1973}
+Michael~N Topp.
+\newblock Ultrasonic atomization-a photographic study of the mechanism of
+  disintegration.
+\newblock {\em Journal of Aerosol Science}, 4(1):17--25, 1973.
 
 \bibitem{Virnig1988}
-JC~Virnig, AS~Berman, and PR~Sethna.
-\newblock On three-dimensional nonlinear subharmonic resonant surface waves in
-  a fluid: Part ii—experiment.
+J~C Virnig, A~S Berman, and P~R Sethna.
+\newblock {On three-dimensional nonlinear subharmonic resonant surface waves in
+  a fluid: Part II—Experiment}.
 \newblock {\em Journal of applied mechanics}, 55(1):220--224, 1988.
 
 \bibitem{Westra2003}
 Mark-Tiele Westra, Doug~J. Binks, and Willem {Van De Water}.
 \newblock {Patterns of Faraday waves}.
 \newblock {\em Journal of Fluid Mechanics}, 496:1--32, 2003.
+
+\bibitem{Wood1927}
+E.W. Wood and Alfred~L. Loomis.
+\newblock {The physical and biological effects of high- frequency sound- waves
+  of great intensity}.
+\newblock {\em The London, Edinburgh, and Dublin philosophical magazine and
+  journal of science}, 4(22):417--436, 1927.
+
+\bibitem{Yule2000}
+A.~J. Yule and Y.~Al-Suleimani.
+\newblock {On droplet formation from capillary waves on a vibrating surface}.
+\newblock {\em Proceedings of the Royal Society A: Mathematical, Physical and
+  Engineering Sciences}, 456(1997):1069--1085, 2000.
 
 \end{thebibliography}
